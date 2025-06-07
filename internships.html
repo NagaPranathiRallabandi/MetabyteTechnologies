@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="internships.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="index.html" style="text-decoration: none;">
+                        <img src="./Assets/images/logo1.png" alt="Metabyte Logo">
+                        <img src="./Assets/images/logo2.png" alt="Metabyte Logo" style="height: 50px; padding-bottom: 15px;">
+                    </a>
+                </div>
+
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <ul class="navbar-links" id="navbar-links">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="index.html#services-section" class="nav-link">SERVICES</a></li>
+                    <li><a href="about_us.html" class="nav-link">ABOUT US</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div id="heading">
+            <h2>Internships</h2>
+            <p>At Metabyte Technologies, We provide internships in various domains with our dedicated team members.</p>
+        </div>
+    <section id="carousel-section">
+        <div class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+            <div class="card" data-title="Python Development">
+                <img src="https://cdn-icons-png.flaticon.com/128/1822/1822899.png" alt="Python"> Python Development
+            </div>
+            <div class="card" data-title="Java Development">
+                <img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="Java"> Java Development
+            </div>
+            <div class="card" data-title="Advanced AI & ML">
+                <img src="https://cdn-icons-png.flaticon.com/128/8439/8439935.png" alt="AI"> Advanced AI & ML
+            </div>
+            <div class="card" data-title="Full Stack Development">
+                <img src="https://cdn-icons-png.flaticon.com/128/875/875614.png" alt="Full Stack"> Full Stack Development
+            </div>
+            <div class="card" data-title="Machine Learning">
+                <img src="https://cdn-icons-png.flaticon.com/128/2906/2906277.png" alt="ML"> Machine Learning
+            </div>
+            <div class="card" data-title="Artificial Intelligence">
+                <img src="https://cdn-icons-png.flaticon.com/128/3824/3824123.png" alt="AI"> Artificial Intelligence
+            </div>
+            <div class="card" data-title="Cyber Security">
+                <img src="https://cdn-icons-png.flaticon.com/128/2797/2797387.png" alt="Cyber Security"> Cyber Security
+            </div>
+            <div class="card" data-title="Marketing Analyst">
+                <img src="https://cdn-icons-png.flaticon.com/128/4319/4319160.png" alt="Marketing"> Marketing Analyst
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="controls">
+        <button onclick="rotateCarousel(-1)">◀</button>
+        <button onclick="rotateCarousel(1)">▶</button>
+    </div>
+
+    <div class="details-wrapper" id="details">
+    <div class="details-section">
+        <img id="internship-image" src="" alt="" />
+        <h2 id="internship-title">Title</h2>
+        <p id="internship-description">Description</p>
+        <button onclick="closeDetails()" id="close-btn">Close</button>
+    </div>
+    </div>
+
+    <section id="container">
+        <div class="main-card" onclick="showImages()">OUR TEAM</div>
+        <div class="image-container" id="imageContainer">
+            <div class="image-box" onmouseover="updateDetails('Full-Stack Web Development')">
+                <img src="./Assets/images/revanth.jpg" alt="Image 1">
+            </div>
+            <div class="image-box" onmouseover="updateDetails('Expert in Digital Marketing')">
+                <img src="./Assets/images/moses.jpg" alt="Image 2">
+            </div>
+            <div class="image-box" onmouseover="updateDetails('AI Specialist: ML, NLP, Automation')">
+                <img src="./Assets/images/prudhvi.jpg" alt="Image 3">
+            </div>
+            <div class="image-box" onmouseover="updateDetails('Front-End, Back-End, Python, SQL')">
+                <img src="./Assets/images/Image1.jpg" alt="Image 4">
+            </div>
+            <div class="image-box" onmouseover="updateDetails('MERN Stack Developer, ML')">
+                <img src="./Assets/images/Image2.jpg" alt="Image 5">
+            </div>
+            <div class="image-box" onmouseover="updateDetails('Python, DevOps Engineer')">
+                <img src="./Assets/images/Image3.jpg" alt="Image 6">
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="details-box" id="detailsBox">Hover over an image to see details</div>
+
+    <br>
+    <footer>
+        <div class="footer-container">
+            <section id="contact">
+                <a href="tel:+919494584396" class="footer-link">
+                    <i class="fa-solid fa-phone"></i> +91 94945 84396
+                </a>
+                <a href="https://www.instagram.com/metabyte_technologies?igsh=MXFoazBsZmF1b3ZiZw==" target="_blank" class="footer-link">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://wa.me/919494584396" target="_blank" class="footer-link">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.linkedin.com/posts/metabyte-technologies-it-solutions_hiring-sales-marketing-activity-7297224040862072832-eNYl?utm_source=share&utm_medium=member_ios&rcm=ACoAAEEl7L8BfnbSodO26IzC_SWHoWUtxvdivgo" target="_blank" class="footer-link">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:metabytet@gmail.com" class="footer-link">
+                    <i class="fa-solid fa-envelope"></i> metabytet@gmail.com
+                </a>
+            </section>
+            <p>&copy; 2025 Metabyte Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        let angle = 0;
+        const carousel = document.getElementById("carousel");
+        const title = document.getElementById("internship-title");
+        const description = document.getElementById("internship-description");
+        const image = document.getElementById("internship-image");
+        const detailsSection = document.getElementById("details");
+
+        const internshipData = {
+            "Python Development": {
+                description: "Learn Python programming from scratch to advanced concepts, including data structures, web development (Django/Flask), automation, and API integration. Work on real-world projects that will enhance your problem-solving skills and make you industry-ready.",
+                img: "https://cdn-icons-png.flaticon.com/128/1822/1822899.png"
+            },
+            "Java Development": {
+                description: "Master Java programming and its applications in software development, web applications, and enterprise-level solutions. Get exposure to frameworks like Spring Boot and Hibernate, and build scalable applications.",
+                img: "https://cdn-icons-png.flaticon.com/128/226/226777.png"
+            },
+            "Advanced AI & ML": {
+                description: "Dive deep into Artificial Intelligence and Machine Learning, learning deep learning, neural networks, NLP, and AI-powered automation. Work on cutting-edge projects that solve real-world challenges.",
+                img: "https://cdn-icons-png.flaticon.com/128/8439/8439935.png"
+            },
+            "Full Stack Development": {
+                description: "Become a full-stack developer by mastering front-end (HTML, CSS, JavaScript, React.js/Angular) and back-end (Node.js, Express, Django, or Spring Boot) technologies. Learn how to build end-to-end applications with database integration.",
+                img: "https://cdn-icons-png.flaticon.com/128/875/875614.png"
+            },
+            "Machine Learning": {
+                description: "Understand the core principles of Machine Learning, including supervised and unsupervised learning, data analysis, and predictive modeling. Get hands-on experience with TensorFlow, Scikit-learn, and PyTorch.",
+                img: "https://cdn-icons-png.flaticon.com/128/2906/2906277.png"
+            },
+            "Artificial Intelligence": {
+                description: "Learn how AI is transforming industries! Explore computer vision, NLP, chatbots, and reinforcement learning with practical projects. Gain proficiency in AI frameworks like OpenAI, Hugging Face, and TensorFlow.",
+                img: "https://cdn-icons-png.flaticon.com/128/3824/3824123.png"
+            },
+            "Cyber Security": {
+                description: "Enhance your knowledge of ethical hacking, penetration testing, network security, and cryptography. Learn how to identify vulnerabilities, prevent cyber threats, and secure digital systems against attacks.",
+                img: "https://cdn-icons-png.flaticon.com/128/2797/2797387.png"
+            },
+            "Marketing Analyst": {
+                description: "Develop expertise in digital marketing, SEO, data analytics, market research, and consumer behavior. Learn how to interpret data, create marketing strategies, and optimize digital campaigns using Google Analytics, SEMrush, and social media tools.",
+                img: "https://cdn-icons-png.flaticon.com/128/4319/4319160.png"
+            }
+        };
+
+        let startX = 0;
+        let isSwiping = false;
+
+        const carouselElement = document.getElementById("carousel");
+
+        // Touch start
+        carouselElement.addEventListener("touchstart", (e) => {
+            startX = e.touches[0].clientX;
+            isSwiping = true;
+        });
+
+        // Touch move (optional: for future real-time dragging)
+        carouselElement.addEventListener("touchmove", (e) => {
+            if (!isSwiping) return;
+            const currentX = e.touches[0].clientX;
+            const diff = currentX - startX;
+
+            if (Math.abs(diff) > 50) { // Swipe threshold
+                if (diff > 0) {
+                    rotateCarousel(-1); // Swipe Right → Rotate Left
+                } else {
+                    rotateCarousel(1); // Swipe Left → Rotate Right
+                }
+                isSwiping = false;
+            }
+        });
+
+        // Touch end (reset)
+        carouselElement.addEventListener("touchend", () => {
+            isSwiping = false;
+        });
+
+        
+        let currentAngle = 0;
+        const totalCards = document.querySelectorAll('.card').length;
+
+        function rotateCarousel(direction) {
+            currentAngle += direction;
+            const anglePerCard = 360 / totalCards;
+
+            document.querySelectorAll('.card').forEach((card, index) => {
+                const angle = anglePerCard * index + anglePerCard * currentAngle;
+                card.style.transform = `rotateY(${angle}deg) translateZ(300px) translate(-50%, -50%)`;
+            });
+        }
+
+        
+        document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+        let internshipTitle = card.getAttribute('data-title');
+        let internshipInfo = internshipData[internshipTitle];
+
+        if (internshipInfo) {
+            // Update content
+            document.getElementById("internship-title").textContent = internshipTitle;
+            document.getElementById("internship-description").textContent = internshipInfo.description;
+            document.getElementById("internship-image").src = internshipInfo.img;
+
+            // Show details box
+            const detailsWrapper = document.getElementById("details");
+            const detailsSection = detailsWrapper.querySelector(".details-section");
+
+            detailsSection.style.display = "block"; // shows the inner card
+            detailsWrapper.style.display = "flex";  // shows the wrapper
+        }
+    });
+});
+
+        function updateDetails(text) {
+            let detailsBox = document.getElementById("detailsBox");
+            detailsBox.innerText = text;
+            detailsBox.style.display = "block";
+        }
+
+        function closeDetails() {
+    const detailsWrapper = document.getElementById("details");
+    const detailsSection = detailsWrapper.querySelector(".details-section");
+
+    detailsSection.style.display = "none";
+    detailsWrapper.style.display = "none";
+}
+
+    function showImages() {
+  let images = document.querySelectorAll(".image-box");
+  images.forEach((image, index) => {
+    setTimeout(() => {
+      image.classList.add("show");
+    }, index * 200);
+  });
+}
+
+        // Toggle mobile navbar
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.getElementById("menu-toggle");
+            const links = document.getElementById("navbar-links");
+
+            toggle.addEventListener("click", () => {
+                links.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+</html>

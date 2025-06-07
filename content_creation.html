@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Creation - METABYTE TECHNOLOGIES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="content_creation.css">
+</head>
+<body>
+
+<nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="index.html" style="text-decoration: none;">
+                        <img src="./Assets/images/logo1.png" alt="Metabyte Logo">
+                        <img src="./Assets/images/logo2.png" alt="Metabyte Logo" style="height: 50px; padding-bottom: 15px;">
+                    </a>
+                </div>
+
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <ul class="navbar-links" id="navbar-links">
+                    <li><a href="index.html" class="nav-link">HOME</a></li>
+                    <li><a href="#services-section" class="nav-link">SERVICES</a></li>
+                    <li><a href="about_us.html" class="nav-link">ABOUT US</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<section id="content-creation">
+    <div class="container">
+        <h2 class="section-title">Content Creation</h2>
+        <p class="text">At Metabyte Technologies, we create compelling content that strengthens your brand and captivates your audience.</p>
+        <br>
+        <div class="content-section">
+            <div class="content-box">
+                <div class="icon">✍️</div>
+                <h3>Creative Writing</h3>
+                <p>Engaging blogs, articles, and storytelling to build a strong brand narrative.</p>
+            </div>
+            <div class="content-box">
+                <div class="icon">🎥</div>
+                <h3>Video Production</h3>
+                <p>High-quality video content for marketing, social media, and brand engagement.</p>
+            </div>
+            <div class="content-box">
+                <div class="icon">🎨</div>
+                <h3>Graphic Design</h3>
+                <p>Eye-catching visuals and branding materials to enhance your business identity.</p>
+            </div>
+            <div class="content-box">
+                <div class="icon">📱</div>
+                <h3>Social Media Content</h3>
+                <p>Custom posts, stories, and campaigns to boost engagement and visibility.</p>
+            </div>
+        </div>
+        <p class="closing-message">From visuals to voice, we shape your brand’s story across all platforms. ✨</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <section id="contact">
+            <a href="tel:+919494584396" class="footer-link">
+                <i class="fa-solid fa-phone"></i> +91 94945 84396
+            </a>
+            <a href="https://www.instagram.com/metabyte_technologies?igsh=MXFoazBsZmF1b3ZiZw==" target="_blank" class="footer-link">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/919494584396" target="_blank" class="footer-link">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/posts/metabyte-technologies-it-solutions_hiring-sales-marketing-activity-7297224040862072832-eNYl?utm_source=share&utm_medium=member_ios&rcm=ACoAAEEl7L8BfnbSodO26IzC_SWHoWUtxvdivgo" target="_blank" class="footer-link">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:metabytet@gmail.com" class="footer-link">
+                <i class="fa-solid fa-envelope"></i> metabytet@gmail.com
+            </a>
+        </div>
+        <p>&copy; 2025 Metabyte Technologies. All rights reserved.</p>
+    </section>
+</footer>
+    <script>function scrollToServices() {
+        document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Toggle mobile navbar
+    document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const links = document.getElementById("navbar-links");
+
+    toggle.addEventListener("click", () => {
+        links.classList.toggle("show");
+    });
+    });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const contentBoxes = document.querySelectorAll(".content-box");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    contentBoxes.forEach(box => observer.observe(box));
+  });
+    </script>
+</body>
+</html>
